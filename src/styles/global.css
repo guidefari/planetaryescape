@@ -61,3 +61,12 @@
 /* .splide__pagination {
   visibility: hidden;
 } */
+
+@layer base {
+  * {
+    /* @apply border-border; */
+  }
+  body {
+    @apply text-white;
+  }
+}
