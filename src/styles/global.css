@@ -69,4 +69,8 @@
   body {
     @apply text-white;
   }
+
+  a {
+    @apply duration-200 text-orange hover:underline;
+  }
 }
