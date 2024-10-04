@@ -1,5 +1,5 @@
 {
-  "name": "@lexington/starter",
+  "name": "planetaryescape",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -14,14 +14,12 @@
     "@astrojs/preact": "^3.5.3",
     "@astrojs/sitemap": "^3.1.6",
     "astro": "^4.15.4",
+    "hono": "^4.6.3",
     "npm": "^10.8.3",
+    "sst": "^3.1.47",
     "preact": "^10.23.2"
   },
-
-
-  
   "devDependencies": {
-
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "@tailwindcss/vite": "^4.0.0-alpha.23",
