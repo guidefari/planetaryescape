@@ -1,5 +1,6 @@
 ---
 const homePage = Astro.url.origin;
+const isDiscordPage = Astro.url.pathname === '/discord';
 ---
 
 <nav
@@ -15,10 +16,10 @@ const homePage = Astro.url.origin;
           ><span>PLANETARY ESCAPE</span>
         </a>
         <a
-          href="/discord"
+          href={isDiscordPage ? "https://discord.gg/pFvKSmzWpH" : "/discord"}
           class="w-full px-6 py-4 text-xs text-center text-black uppercase duration-200 bg-purple-400 font-display lg:w-auto sm:rounded-full hover:text-white"
           >
-          Discord Community
+          {isDiscordPage ? "Join The Discord Server" : "Discord Community"}
           </a
         >
       </div>
