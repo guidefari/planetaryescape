@@ -57,3 +57,67 @@ This is an Astro-based website with two main components:
 - Main site: Astro static site (domain: planetaryescape.xyz)
 - Webring API: AWS Lambda via SST
 - Production retention policy for AWS resources
+
+## Design System
+
+### Color Palette
+- **Primary Black**: `#1e1e1e` (--color-black) - Main background color
+- **Primary White**: `#e7e7d8` (--color-white) - Main text and contrast color
+- **Eagle Gray**: `#afac95` (--color-eagle) - Secondary text and accents
+- **Orange**: `#ea4125` (--color-orange) - CTA buttons and highlights
+
+### Typography
+- **Display Font**: "Basement" (BSBlack) - Used for headings and branding
+  - Applied via `.font-display` class
+  - Always uppercase for consistency
+  - Font weight: 700
+- **Body Font**: InterVariable - Used for body text and descriptions
+- **Text Hierarchy**:
+  - Hero titles: `text-3xl lg:text-7xl uppercase font-display`
+  - Section headers: `text-3xl lg:text-6xl uppercase font-display`
+  - Card titles: `text-xl font-medium sm:text-2xl`
+  - Body text: Default sizing with Inter
+
+### Layout Patterns
+- **Container**: `max-w-7xl mx-auto` - Standard content container
+- **Section Borders**: `border-b border-white/20` - Section dividers
+- **Content Borders**: `border-white/20 border-x` - Side borders for content areas
+- **Padding**: `p-8` for standard content padding
+
+### Component Patterns
+
+#### Navigation
+- Black background with white/20% opacity borders
+- Logo on left, action buttons on right
+- Responsive flex layout (column on mobile, row on desktop)
+- Primary CTA: white background with black text
+- Secondary links: black background with white text and border
+
+#### Cards/Services
+- White background with black text for content cards
+- Hover effects: `-translate-x-2 -translate-y-2` transform
+- Dashed border backdrop effect
+- Black border on white background pattern
+
+#### Buttons & CTAs
+- **Primary**: White background, black text, full width on mobile
+- **Secondary**: Black background, white text, white border
+- Hover states with color inversion
+- Consistent padding: `px-6 py-4`
+
+### Animation & Effects
+- **Marquee**: `animate-marquee` - 15s linear infinite scroll
+- **Gradient Grid**: `.gradient-grid` - Subtle grid pattern background
+- **Hover Transforms**: Consistent `-translate-x-2 -translate-y-2` pattern
+- **Transitions**: `duration-200` for all interactive elements
+
+### Responsive Design
+- Mobile-first approach
+- Breakpoints: sm (640px), md (768px), lg (1024px), 2xl (1536px)
+- Grid layouts: 1 column mobile → 2 columns tablet → 4 columns desktop
+- Typography scales appropriately across breakpoints
+
+### Accessibility
+- High contrast color combinations (black/white, orange accents)
+- Proper semantic HTML structure
+- Keyboard navigation support via standard link/button elements
